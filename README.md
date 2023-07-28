@@ -23,9 +23,9 @@ Static-linked Haskell release binary lovingly built with Nix flakes! See `flake-
  "custom/swankybar-as" : {
    "format": "{}",
    "format-alt": "{}",
-   "on-click": "PATH/TO/swankybar-as", // UPDATE THIS
+   "on-click": "PATH/TO/swankybar-as toggle", // UPDATE THIS
    "on-click-middle": "PATH/TO/swankybar-as toggle --all", // UPDATE THIS
-   "on-click-right": "PATH/TO/swankybar-as toggle", // UPDATE THIS
+   "on-click-right": "PATH/TO/swankybar-as", // UPDATE THIS
    "return-type": "json",
    "tooltip": true,
    "exec": "PATH/TO/swankybar-as", // UPDATE THIS
