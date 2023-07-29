@@ -4,6 +4,10 @@ Sway + Waybar custom plugin to toggle Adaptive Sync from Waybar.
 
 Made this custom plugin because Sway with adaptive sync on causes my monitors to flicker, so I only want to use it when gaming. But I can never remember the magical invocation and `swaymsg --help` is not very helpful.
 
+![Adaptive Sync On](images/sync_on.png) ![Adaptive Sync Off](images/sync_off.png) 
+
+![DBus notification](images/notification.png)
+
 Static-linked Haskell release binary lovingly built with Nix flakes! See `flake-static.nix`.
 
 ## Requirements
