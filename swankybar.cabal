@@ -20,10 +20,10 @@ name:               swankybar
 -- PVP summary:     +-+------- breaking API changes
 --                  | | +----- non-breaking API additions
 --                  | | | +--- code changes with no API change
-version:            0.1.0.0
+version:            0.1.9.0
 
 -- A short (one-line) description of the package.
-synopsis: A Waybar custom plugin to toggle Adaptive Sync in Sway
+synopsis: A Waybar custom plugin to toggle Adaptive Sync in Sway and display CPU scaling governors
 
 -- A longer description of the package.
 -- description:
@@ -62,7 +62,7 @@ executable swankybar-as
                     , release
 
     -- .hs or .lhs file containing the Main module.
-    main-is:          Main.hs
+    main-is:          swankybar-as/Main.hs
 
     -- Modules included in this executable, other than Main.
     other-modules:    Outputs
@@ -93,6 +93,39 @@ executable swankybar-as
 
     -- Directories containing source files.
     hs-source-dirs:   app
+                    , app/swankybar-as
+
+    -- Base language which the package is written in.
+    default-language: Haskell2010
+
+executable swankybar-cpugov
+    import:           warnings
+                    , release
+
+    -- .hs or .lhs file containing the Main module.
+    main-is:          swankybar-cpugov/Main.hs
+
+    -- Modules included in this executable, other than Main.
+    other-modules:    Outputs
+                    , CmdArgs
+
+    -- LANGUAGE extensions used by modules in this package.
+    -- other-extensions:
+
+    -- Other library packages from which modules are imported.
+    build-depends:    base ^>=4.16.4.0
+                    , text
+                    , mtl
+                    , aeson
+                    , bytestring
+                    , transformers
+                    , containers
+                    , cmdargs
+                    , directory
+
+    -- Directories containing source files.
+    hs-source-dirs:   app
+                    , app/swankybar-cpugov
 
     -- Base language which the package is written in.
     default-language: Haskell2010

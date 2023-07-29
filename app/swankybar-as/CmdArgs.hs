@@ -5,7 +5,7 @@ module CmdArgs where
 import System.Console.CmdArgs
 
 version :: String
-version = "0.1.0.0"
+version = "0.1.9.0"
 
 data WaybarAdaptive = Toggle { all_ :: Bool }
                     | Display
