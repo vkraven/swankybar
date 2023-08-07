@@ -1,5 +1,5 @@
 {
-  description = "A Waybar custom plugin to enable or disable adaptive sync in Sway";
+  description = "Some Waybar custom plugins to enable or disable adaptive sync in Sway, and other tools";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs";

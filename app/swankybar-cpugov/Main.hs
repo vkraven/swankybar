@@ -17,6 +17,7 @@ import Control.Exception (catch, IOException)
 import System.Directory
 import qualified Data.Set as S
 
+
 data CpuInfo = CpuInfo {
     ci_name :: String
   , ci_driver :: String
